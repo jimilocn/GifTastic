@@ -50,7 +50,7 @@ $(document).ready(function () {
                 // id tag for styling and onclick function
                 image.attr("id", "makeupGif");
                 // put all the images in the empty div from above
-                makeupDiv.append(image);
+                makeupDiv.prepend(image);
                 // place the newly generated div inside the html div
                 $("#makeup-img").prepend(makeupDiv);
 
@@ -80,7 +80,7 @@ $(document).ready(function () {
         $("#makeup-img").empty();
         $("#makeup-btn").empty();
 
-// for loop generate a button for each othe 
+// for loop generate a button for each item in the array, adding a class for styling, and adding a data-name for recall to search the giphy API
         for (var i = 0; i < makeupArr.length; i++) {
             var btn = $("<button>");
             btn.addClass("makeup-btn");
@@ -98,15 +98,17 @@ $(document).ready(function () {
         // This line grabs the input from the textbox
         var makeupAdd = $("#makeup-input").val().trim();
 
-        // Adding movie from the textbox to our array
+        // Adding item from the array
         makeupArr.push(makeupAdd);
 
-        // Calling renderButtons which handles the processing of our movie array
+        // Calling renderButtons which handles the processing of our makeup array
         renderMakeupButtons();
     });
 
 
     renderMakeupButtons();
+
+    // on click for the makeup buttons, the ajax will be run to pull up the images from the giphy API
     $(document).on("click", ".makeup-btn", pullUpGif);
 
 

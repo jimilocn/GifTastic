@@ -13,7 +13,7 @@
     <!-- used for basic styling within page -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Kanit:800i|Open+Sans:800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Crimson+Text|Fjalla+One|Libre+Baskerville|Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- creates a cute picture at the top tab of the website -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <title>Make-up Gifs</title>
@@ -23,8 +23,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10">
-                <div class="logo">
-                    <img src="./assets/images/Logo.png" alt="logo">
+                <div >
+                    <img class="logo" src="./assets/images/Logo.png" alt="logo">
                 </div>
             </div>
             <div class="col-md-2">
@@ -33,6 +33,7 @@
                     data-content="Search the internet for all the gifs on how to doll yourself up to new heights!">
                     How to...
                 </button>
+                
             </div>
 
 
@@ -50,19 +51,22 @@
                     <input type="text" id="makeup-input">
                     <br>
                     <input id="add-makeup" type="submit" value="Add it!">
+
                 </form>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                    <div id="makeup-img"></div>
+                    <div id="makeup-img">
+                        <br>
+                    </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="./assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" alt="giphy logo">
+            <div id="giphyRow" class="col-md-12 text-center">
+                <img id="giphyLogo" src="./assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" alt="giphy logo">
             </div>
         </div>
 

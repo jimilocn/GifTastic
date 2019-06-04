@@ -4,21 +4,26 @@ body {
     background-repeat: repeat;
     height: 100%;
     width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Libre Baskerville', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Arvo', serif; */
 }
 
-.container {
-    /* background: blue; */
-}
+
 
 .logo {
     margin-top: 50px;
+    width: 100%;
 }
 
-p {
+p,
+label {
     font-size: 20px;
     color: rgb(221, 76, 100);
     font-weight: bolder;
-    padding:5px;
+    padding: 5px;
 }
 
 p:hover {
@@ -28,4 +33,48 @@ p:hover {
 
 img {
     border-radius: 10px;
+}
+
+.makeup-btn {
+    padding: 5px;
+    color: rgb(221, 76, 100);
+    background: rgb(116, 0, 44);
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+
+#add-makeup {
+    padding: 5px;
+    background: rgb(221, 76, 100);
+    color: rgb(116, 0, 44);
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#add-makeup:hover {
+    background: rgb(116, 0, 44);
+    color: rgb(238, 126, 144);
+    transition: 0.5s;
+}
+
+#makeup-input {
+    border-radius: 5px;
+}
+
+.makeup-btn:hover {
+    color: rgb(116, 0, 44);
+    background: rgb(238, 126, 144);
+    transition: 0.5s;
+
+
+}
+
+
+#giphyLogo {
+    margin-bottom:0px;
 }
