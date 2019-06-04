@@ -11,6 +11,10 @@ body {
     font-family: 'Arvo', serif; */
 }
 
+.container {
+    background: rgba(128, 128, 128, 0.253);
+}
+
 
 
 .logo {
