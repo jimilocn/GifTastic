@@ -20,3 +20,12 @@ p {
     font-weight: bolder;
     padding:5px;
 }
+
+p:hover {
+    color: rgb(116, 0, 44);
+    transition: 0.5s;
+}
+
+img {
+    border-radius: 10px;
+}
