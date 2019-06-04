@@ -1,0 +1,22 @@
+body {
+    background: url("../images/marble.jpg");
+    /* background-size: cover; */
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    /* background: blue; */
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(221, 76, 100);
+    font-weight: bolder;
+    padding:5px;
+}

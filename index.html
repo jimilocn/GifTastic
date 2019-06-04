@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- used to make sure that page is standardized across all platforms and windows -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- used for ease of placement of content within page and bootstrap buttons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- used for basic styling within page -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:800i|Open+Sans:800i&display=swap" rel="stylesheet">
+    <!-- creates a cute picture at the top tab of the website -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Make-up Gifs</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="logo">
+                    <img src="./assets/images/Logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary text-right" data-container="body" data-toggle="popover"
+                    data-placement="bottom"
+                    data-content="Search the internet for all the gifs on how to doll yourself up to new heights!">
+                    How to...
+                </button>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="makeup-btn" id="makeup-btn">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form id="makeup-form">
+                    <label for="makeup-input">Add more make-up items!</label>
+                    <input type="text" id="makeup-input">
+                    <br>
+                    <input id="add-makeup" type="submit" value="Add it!">
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                    <div id="makeup-img"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="./assets/images/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif" alt="giphy logo">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS for popover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
