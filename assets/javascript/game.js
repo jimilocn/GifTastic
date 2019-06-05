@@ -80,7 +80,7 @@ $(document).ready(function () {
         $("#makeup-img").empty();
         $("#makeup-btn").empty();
 
-// for loop generate a button for each item in the array, adding a class for styling, and adding a data-name for recall to search the giphy API
+        // for loop generate a button for each item in the array, adding a class for styling, and adding a data-name for recall to search the giphy API
         for (var i = 0; i < makeupArr.length; i++) {
             var btn = $("<button>");
             btn.addClass("makeup-btn");
@@ -95,14 +95,26 @@ $(document).ready(function () {
 
     $("#add-makeup").on("click", function (event) {
         event.preventDefault();
+
+
         // This line grabs the input from the textbox
         var makeupAdd = $("#makeup-input").val().trim();
+// checks the array for multiple entries of the same word
+        for (var i = 0; i < makeupArr.length; i++) {
+// if there is not the same entry then move forward
+            if (makeupArr.indexOf(makeupAdd) === -1) {
+// push the user entry into the array if the input is not blank
+                if (makeupAdd.length > 0) {
+                    // Adding item from the array
+                    makeupArr.push(makeupAdd);
 
-        // Adding item from the array
-        makeupArr.push(makeupAdd);
+                    // Calling renderButtons which handles the processing of our makeup array
+                    renderMakeupButtons();
 
-        // Calling renderButtons which handles the processing of our makeup array
-        renderMakeupButtons();
+                }
+            }
+        }
+    
     });
 
 
